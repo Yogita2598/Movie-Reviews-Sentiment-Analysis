@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFlaskApp</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/try47.css') }}"/>
+    </head>
+    <body>
+        <header>
+            <p>Movie Review Sentiment Analysis</p>
+        </header>
+        <div class = "top">
+            <h1>Movie Review Sentiment Analysis</h1>
+            <form action="http://localhost:5000/genre" methods=['GET','POST']>
+                <input class = "btn" type = "submit" name = "basebtn" value = "Go to Movies" />
+            </form>
+        </div>
+        <div class="intro">
+            <p>Movie reviews help users decide if the movie is worth their time.
+            A summary of all reviews for a movie can help users make this decision
+            by not wasting their time reading all reviews. Movie-rating websites
+            are often used by critics to post comments and rate movies which help
+            viewers decide if the movie is worth watching.
+            <br/>
+            <br/>
+            Sentiment analysis can
+            determine the attitude of critics depending on their reviews. Sentiment 
+            analysis of a movie review can rate how positive or negative a movie review is 
+            and hence the overall rating for a movie. Therefore, the process of understanding 
+            if a review is positive or negative can be automated as the machine learns through training and testing the data. </p>
+        </div>
+        <footer>
+            <p>Movie Review Sentiment Analysis</p>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFlaskApp</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/try47.css') }}"/>
+    </head>
+    <body>
+        <header>
+            <p>Movie Review Sentiment Analysis</p>
+        </header>
+        <div class = "genres">
+            <h1>Drama Movies</h1>
+            <div class = "comedy">
+                <form action="http://localhost:5000/kesari" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/kesari.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Kesari" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/mangal" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/mangal.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre2" value = "Mission Mangal" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/gully" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic17.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre3" value = "Gully Boy" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/padman" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic12.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Padman" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

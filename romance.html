@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFlaskApp</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/try47.css') }}"/>
+    </head>
+    <body>
+        <header>
+            <p>Movie Review Sentiment Analysis</p>
+        </header>
+        <div class = "genres">
+            <h1>Romantic Movies</h1>
+            <div class = "comedy">
+                <form action="http://localhost:5000/piku" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic8.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Piku" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/kaabil" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic15.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Kaabil" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/luka" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic7.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre2" value = "Luka Chuppi" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/kabir" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic24.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre3" value = "Kabir Singh" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/jodi" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic25.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Jabariya Jodi" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

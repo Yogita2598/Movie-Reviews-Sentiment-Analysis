@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFlaskApp</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/try47.css') }}"/>
+    </head>
+    <body>
+        <header>
+            <p>Movie Review Sentiment Analysis</p>
+        </header>
+        <div class = "genres">
+            <h1>Movie Genres</h1>
+            <div class = "genre">
+                <form action="http://localhost:5000/comedy" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/comedy.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Comedy" />
+                </form>
+            </div>
+            <div class = "genre">
+                <form action="http://localhost:5000/horror" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/horror.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre2" value = "Horror" />
+                </form>
+            </div>
+            <div class = "genre">
+                <form action="http://localhost:5000/drama" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/drama.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre3" value = "Drama" />
+                </form>
+            </div>
+            <div class = "genre">
+                <form action="http://localhost:5000/romance" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/romance.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Romance" />
+                </form>
+            </div>
+            <div class = "genre">
+                <form action="http://localhost:5000/history" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/histroy.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "History" />
+                </form>
+            <div>
+        </div>
+    </body>
+</html>

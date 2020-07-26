@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFlaskApp</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/try47.css') }}"/>
+    </head>
+    <body>
+        <header>
+            <p>Movie Review Sentiment Analysis</p>
+        </header>
+        <div class = "movie">
+            <div class= "container" align="middle">
+                <h1>Mission Mangal</h1>
+                <img src="{{url_for('static', filename='images/mangal.jpg')}}" class="movieimg" align="middle" height= 300px width= 300px>
+                <div class= "about">
+                    
+                    <p>The film tells the inspiring tale of India's first Mars Mission, Mangalyaan,
+                    which was launched in 2013. Mission Mangal begins with the failure of GLSV Fat Boy,
+                    and Akshay heroically taking the blame for someone else's mistake. And so, he is
+                    shunted over to the Mars Mission, which no one expects anything from.</p>
+                </div>
+                <div class="review">
+                    <form action="http://localhost:5000/mangal" methods=['GET','POST']>
+                        <p>Please Enter your review here:</p>
+                        <textarea class= "text" name="text1"> </textarea>
+                        <br/>
+                        <input class = "btn2" type = "submit" name="btnSubmit1" value = "Submit"/>
+                        <h2> {{result}} </h2>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

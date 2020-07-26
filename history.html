@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>MyFlaskApp</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/try47.css') }}"/>
+    </head>
+    <body>
+        <header>
+            <p>Movie Review Sentiment Analysis</p>
+        </header>
+        <div class = "genres">
+            <h1>History Movies</h1>
+            <div class = "comedy">
+                <form action="http://localhost:5000/tanhaji" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic6.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre1" value = "Tanhaji" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/baji" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic16.jpg')}}" align="middle" height= 400px width= 400px >
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre2" value = "Bajirao Mastani" />
+                </form>
+            </div>
+            <div class = "comedy">
+                <form action="http://localhost:5000/pani" methods=['GET','POST']>
+                    <img src="{{url_for('static', filename='images/pic22.jpg')}}" align="middle" height= 400px width= 400px>
+                    <br/>
+                    <input class = "btn1" type = "submit" name = "genre3" value = "Panipat" />
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

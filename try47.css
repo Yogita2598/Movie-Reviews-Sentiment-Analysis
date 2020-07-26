@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: "Lucida Grande";
+}
+
+header{
+    background-color: rgb(21, 97, 65);
+    color: white;
+    font-size: 30px;
+    height: 80px;
+}
+
+header p{
+    padding: 25px;
+    font-family: Calibri;
+}
+
+.top{
+    padding: 180px 0 100px 0;
+    background-image: url('../images/home1.jpg');
+    background-size: cover;
+    text-align: center;
+    height: 800px;
+}
+
+.top h1{
+    font-size: 80px;
+    color: rgb(21, 97, 65);
+    font: calibri;
+}
+
+.btn{
+    padding: 12px 24px;
+    color: white;
+    background-color: rgb(21, 97, 65);
+    display: inline-block;
+    border-radius: 10px;
+    height: 80px;
+    width : 350px;
+    font-family: calibri;
+    font-size: 40px;
+}
+
+.intro p{
+    font-family: calibri;
+    font-size: 30px;
+    color: black;
+}
+
+.genres h1{
+    color: rgb(21, 97, 65);
+    align-self: center;
+    font-size: 50px;
+}
+
+.genre{
+    padding-top: 20px;
+    width: 25%;
+    float: left;
+}
+
+.comedy{
+    padding-top: 20px;
+    width: 25%;
+    float: left;
+}
+
+.btn1{
+    padding-top: 20px;
+    margin: 30px;
+    color: white;
+    background-color: rgb(21, 97, 65);
+    display: inline-block;
+    border-radius: 10px;
+    height: 80px;
+    width : 350px;
+    font-family: calibri;
+    font-size: 40px;
+
+}
+
+.movie{
+    background-image: url('../images/bg2.jpg');
+    background-size: cover;
+    height: 1200px;    
+}
+
+.container{
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.container h1{
+    font-size: 60px;
+    font-family: calibri;
+}
+
+.movieimg{
+    vertical-align: middle;
+}
+
+.about{
+    float:left;
+}
+
+.about p{
+    font-size: 30px;
+    font-family: calibri;
+    color: black;
+}
+
+.review p{
+    font-size: 40px;
+    font-family: calibri;
+    color: rgb(21, 97, 65);
+}
+
+.text{
+    height: 200px;
+    width: 600px;
+    font-size: 25px;
+    font-family: calibri;
+}
+
+.btn2{
+    margin: 12px 24px;
+    padding: 20px;
+    color: white;
+    background-color: rgb(21, 97, 65);
+    display: inline-block;
+    border-radius: 10px;
+    height: 80px;
+    width : 350px;
+    font-family: calibri;
+    font-size: 40px;
+}
+
+.review h2{
+    font-size: 50px;
+    font-family: calibri;
+}
+
+.review p{
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(21, 97, 65);
+    color: white;
+    font-family: Calibri;
+    padding-top: 30px;
+    height: 320px;
+    font-size: 40px;
+    width: 100%;
+
+}
